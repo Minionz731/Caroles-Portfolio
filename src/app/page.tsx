@@ -1,103 +1,157 @@
-import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <>
+      <Head>
+        <title>Carole | Software Developer & Ethical Hacker</title>
+        <meta
+          name="description"
+          content="Portfolio of Carole - Ethical Hacker, Developer & Climate Activist"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className="min-h-screen bg-gray-900 text-white px-6 py-12 max-w-4xl mx-auto">
+        <section className="text-center mb-16">
+          <h1 className="text-5xl font-bold mb-4">Hi, I&apos;m Minions 👋</h1>
+          <p className="text-lg md:text-xl max-w-xl mx-auto mb-6 leading-relaxed">
+            Climate-Conscious Ethical Hacker, Software Developer & Media Personality.<br />
+            Building tech solutions blending security, sustainability, and creativity.
+          </p>
+          <div className="flex justify-center space-x-8 text-blue-400">
+            <a
+              href="https://github.com/Minionz731"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-green-400 underline"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/carole-moloi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 underline"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:mloyicz@gmail.com"
+              className="hover:text-red-500 underline"
+            >
+              Contact
+            </a>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">
+            About Me
+          </h2>
+          <p className="leading-relaxed">
+            I&apos;m passionate about ethical hacking, sustainable software development,
+            and creating media content that empowers others. I thrive on solving complex
+            problems and turning ideas into impactful digital solutions.
+          </p>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">
+            Skills & Tech Stack
+          </h2>
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc list-inside">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Kotlin</li>
+            <li>React Native</li>
+            <li>Django</li>
+            <li>Jekyll</li>
+            <li>Bootstrap</li>
+            <li>HTML & CSS</li>
+            <li>Git & GitHub</li>
+            <li>Android Studio</li>
+            <li>Ubuntu, Parrot OS, Kali Linux, Termux</li>
+          </ul>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">
+            Featured Projects
+          </h2>
+          <ul className="space-y-6">
+            <li>
+              <a
+                href="https://github.com/Minionz731/GreenPrint"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline font-semibold"
+              >
+                GreenPrint – Carbon Footprint Tracker
+              </a>
+              <p>
+                A sleek web app that calculates and visualizes your daily carbon footprint
+                with actionable tips to reduce it. Built with Next.js, D3.js, and MongoDB.
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Minionz731/CodeRed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline font-semibold"
+              >
+                Code Red – Ethical Hacking Playground
+              </a>
+              <p>
+                Modular CTF platform for ethical hackers to practice vulnerabilities safely.
+                Dockerized and designed for continuous learning.
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Minionz731/VoiceBank"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline font-semibold"
+              >
+                VoiceBank – Voice-Controlled Budgeting App
+              </a>
+              <p>
+                Android app enabling hands-free expense tracking via voice commands,
+                with accessibility and multi-language support.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">
+            Contact Me
+          </h2>
+          <p>
+            Interested in collaborating, hiring, or just want to say hello?  
+            Reach out via email or connect on LinkedIn.
+          </p>
+          <div className="mt-4 space-x-6 text-blue-400">
+            <a
+              href="mailto:mloyicz@gmail.com"
+              className="underline hover:text-red-500"
+            >
+              mloyicz@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/carole-moloi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-600"
+            >
+              LinkedIn Profile
+            </a>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
